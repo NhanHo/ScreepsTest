@@ -2,7 +2,8 @@ export interface GameManagerInterface {
     globalBootstrap(): void;
     loop(): void;
 }
-
+import * as foo from "./components/foo";
+import * as bar from "./components/bar";
 /**
  * Singleton to bootstrap game
  */
@@ -23,6 +24,8 @@ export namespace GameManager {
         // This is executed every tick
 
         console.log("SUIT UP my creeps!");
+        console.log(foo.fruit);
+        console.log(bar.fruit);
     }
 
 }
